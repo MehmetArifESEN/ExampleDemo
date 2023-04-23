@@ -47,4 +47,14 @@ public class Information {
     public void setMiddleName(String middleName) {
         this.middleName = middleName;
     }
+
+
+    @Override
+    public String toString() {
+        return "Information{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", middleName='" + middleName + '\'' +
+                '}';
+    }
 }

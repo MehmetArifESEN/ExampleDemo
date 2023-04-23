@@ -18,7 +18,13 @@ public class UserController {
     public static void main(String[] args) {
         //createUser();
         UserRepository userRepository = new UserRepository();
-        userRepository.findAll().forEach(System.out::println);
+        //userRepository.findAll().forEach(System.out::println);
+        //userRepository.findallUSerInformation().forEach(System.out::println);
+        //userRepository.findAllInformationByName().forEach(System.out::println);
+        //userRepository.findAllNativeQuery().forEach(System.out::println);
+        User user=userRepository.findById(2L);
+        System.out.println(user.getUsername() + " " + user.getInformation().getName());
+
 
     }
 

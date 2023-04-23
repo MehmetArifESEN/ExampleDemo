@@ -72,7 +72,37 @@ public class User {
         this.id = id;
     }
 
+    public Information getInformation() {
+        return information;
+    }
 
+    public void setInformation(Information information) {
+        this.information = information;
+    }
+
+    public EGender geteGender() {
+        return eGender;
+    }
+
+    public void seteGender(EGender eGender) {
+        this.eGender = eGender;
+    }
+
+    public List<String> getInterests() {
+        return interests;
+    }
+
+    public void setInterests(List<String> interests) {
+        this.interests = interests;
+    }
+
+    public Map<AddressType, Address> getAdders() {
+        return adders;
+    }
+
+    public void setAdders(Map<AddressType, Address> adders) {
+        this.adders = adders;
+    }
 
     public String getUsername() {
         return username;
